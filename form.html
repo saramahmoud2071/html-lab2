@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<style>
+		.topnav {
+			background: gray;
+			color: white;
+			width:100%;
+			height:100px;
+		}
+		/* Style the links inside the navigation bar */
+		.topnav a {
+			color: white;
+			text-align: center;
+			font-size: 17px;
+			background: gray;
+			display:inline;
+			width:150px;
+
+			padding: 40px 17px;
+			float: left;
+			text-decoration: none;
+		}
+		.topnav img{
+			background: gray;
+			border:gray;
+
+		}
+		.topnav a:hover {
+			background-color: red;
+			color: white;
+		}
+		<!-- ddddddddddddddddddddddddddddddddddddddddd -->
+		
+		.center {
+			background:blue;
+			align: center;
+			border:3px dashed navy;
+		}
+		.center form{
+			background:navy;
+
+		}
+	
+	
+	</style>
+</head>
+
+
+<body>
+
+	<div class="topnav">
+		<a href="./index.html">Home</a>
+		<a href="./docs/roadmap.html">Roadmap</a>
+		<a href="./form.html">Registration form</a>
+		<a href="https://iti.gov.eg/">contact</a>
+		<img align="right" src="./img/ITI_logo.png" width="200px" height="100px" alt="logo">
+
+	</div>
+	<!-- ddddddddddddddddddddddddddddddddddddddddd  size:300px 500px;  -->
+	
+	<div style="border:3px dashed navy;padding:20px 50px; height:500px; width:800px; background-color:lightgray;position:relative;left:250px;">
+	
+		<h3>register - create account</h3>
+		<p style="border:3px dashed navy;background-color:lightblue;">filed marked with *are compulsory fileds</p>
+
+		<form>
+			<table>
+				<tr>
+					<td style="text-align:right;background-color: lightblue;" ><label required>your name</label></td>
+					<td><input type="text" name="name" ></td>
+				</tr>
+			
+				<tr>
+					<td style="text-align:right;background-color: lightblue;" ><label required>Email-id</label></td>
+					<td><input type="email" name="mail"></td>
+				</tr>
+			
+				<tr>
+					<td style="text-align:right;background-color: lightblue;" ><label>alternative Email-id</label></td>
+					<td><input type="email" name="alt-mail"></td>
+				</tr>
+			
+				<tr>
+					<td style="text-align:right;background-color: lightblue;" ><label>your phone</label></td>
+					<td>
+						<input type="tel" name="country code">-
+						<input type="tel" name="citycode">-
+						<input type="tel" name="phone number">
+					</td>
+				</tr>
+			
+			
+				<tr>
+					<td style="text-align:right;background-color: lightblue;" ><label>mobile phone</label></td>
+					<td><input type="tel" name="phone"></td>
+				</tr>
+			
+				<tr>
+					<td style="text-align:right;background-color: lightblue;" ><label required>your postal address</label></td>
+					<td><textarea name="postaladdress" ></textarea></td>
+				</tr>
+			
+				<tr>
+					<td style="text-align:right;background-color: lightblue;" ><label>country</label></td>
+					<td>
+						<select name="county"  required>
+							<option value="eg">egypt</option>
+							<option value="jordan">jordan</option>
+							<option value="lebanon">lebanon</option>
+						</select>
+					</td>
+				</tr>
+			
+				<tr>
+					<td style="text-align:right;background-color: lightblue;" ><label required>password</label></td>
+					<td><input type="password" name="pwd"></td>
+				</tr>
+			
+				<tr>
+					<td style="text-align:right;background-color: lightblue;"><label required>re-enter password</label></td>
+					<td><input type="password" name="re-pwd"></td>
+				</tr>
+		
+			</table>
+		
+			<div style="position:relative;left:250px;top:50px;">
+				<input type="checkbox"  name="terms" >
+				<label for="terms" style="align:center;"> I acceot the terms of use</label> <br>
+		
+				<input type="submit" formaction="./index.html" value="continue>>" >
+				<input type="reset" value="reset">
+			</div>
+
+		</form>
+	</div>
+	
+	
+	<hr>
+	<p style="text-align:center"> copyright 2021 by noha salah 	&copy; . all rights reseved </p>
+</body>
+</html>
